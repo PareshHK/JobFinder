@@ -10,14 +10,16 @@ import {
   JobDetail,
   UploadJob,
   UserProfile,
+  OurServices
 } from "./pages";
+import { useSelector } from 'react-redux';
 
 
 function Layout(){
 
-  const user = false;
+  const { user } = useSelector((state) => state.user);
   const location = useLocation();
-
+  
 return user ?(
   <Outlet />
 ):(
@@ -27,7 +29,7 @@ return user ?(
 }
 
 function App() {
-  const user = {};
+  const { user } = useSelector((state) => state.user);
 
   return (
     <main className='bg-[#f7fdfd]'> 
@@ -58,6 +60,7 @@ function App() {
 
         <Route path='/about-us' element={<About />} />
         <Route path='/user-auth' element={<AuthPage />} />
+        <Route path='/OurServices' element={<OurServices/>}/>
       </Routes>
 
       { user && <Footer /> }
@@ -68,4 +71,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

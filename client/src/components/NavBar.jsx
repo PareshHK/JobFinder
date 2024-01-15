@@ -110,22 +110,25 @@ const Navbar = () => {
         <nav className='container mx-auto flex items-center justify-between p-5'>
           <div>
             <Link to='/' className='text-blue-600 font-bold text-xl'>
-              Job<span className='text-[#1677cccb]'>Finder</span>
+              Tresbien<span className='text-[#1677cccb]'> La Technologies</span>
             </Link>
           </div>
 
           <ul className='hidden lg:flex gap-10 text-base'>
             <li>
-              <Link to='/'>Find Job</Link>
+              <Link to='/about-us'>About us</Link>
             </li>
             <li>
-              <Link to='/companies'>Companies</Link>
+              <Link to='/OurServices'>Our Services</Link>
             </li>
             <li>
               <Link to='/upload-job'>Upload Job</Link>
             </li>
             <li>
-              <Link to='/about-us'>About</Link>
+              <Link to='/'>Get a Job</Link>
+            </li>
+            <li>
+              <Link to='/companies'>Companies</Link>
             </li>
           </ul>
 
@@ -174,6 +177,9 @@ const Navbar = () => {
           </Link>
           <Link to='/about-us' onClick={handleCloseNavbar}>
             About
+          </Link>
+          <Link to='/OurServices' onClick={handleCloseNavbar}>
+            OurServices
           </Link>
 
           <div className='w-full py-10'>

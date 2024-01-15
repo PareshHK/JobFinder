@@ -8,9 +8,12 @@ import Twitter from "./twitter.png";
 import Instagram from "./instagram.png";
 import Spotify from "./spotify.png";
 import Office from "./office.jpg";
-import JobImg from "./job.jpg";
+import JobImg from "./job2.jpeg";
 import Facebook from "./facebook.png";
 import CodeWave from "./codewave.png";
+import Tresbien from "./tresbien-1.jpeg";
+import Tresbien2 from "./tresbien-2.jpeg";
+import Tresbien3 from "./tresbien-3.jpeg"
 
 export {
   CodeWave,
@@ -26,4 +29,7 @@ export {
   Youtube,
   Office,
   JobImg,
+  Tresbien,
+  Tresbien2,
+  Tresbien3
 };
